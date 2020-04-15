@@ -1,0 +1,88 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage[document]{ragged2e}
+\title{\LaTeX}
+
+\begin{document}
+
+\centering{\huge{CHAPTER 1}} 
+\linebreak
+
+\centering{\huge{INTRODUCTION}}
+
+\begin{quotation}
+  \justify{  
+            The concept of integration and differentiation is familiar to all who have studied
+            elementary calculus. We know, for instance, that if $f(x)=x^2$ to the $1^{st}$ order results in
+            $\int f(x)dx = \frac{1}{3} x^3 + c1$ and integrating the same function to the 
+            $2^{nd}$ order results in $\int{[\int f(x)dx]dx} = \frac{1}{12} x^4 + c1x +c2$ . Similarly, 
+            $\frac{d}{dx} f(x)=2x$ and $\frac{d^2}{dx^2} f(x)=2$. . However, what if we wanted to integrate our function 
+            $f(x)$ to the $1/2^{th}$ order or find its $1/2^{th}$ order derivative?  How could we define our operations? Better still,
+            would our results have a meaning or an application comparable to that of the familiar integer order operations? 
+          }
+\end{quotation}
+
+\begin{quotation}
+  \emph{1.1 The Origin of Fractional Calculus}\\   
+   
+  \justify{
+    Fractional calculus owes its origin to a question of whether the meaning of a derivative to
+    an integer order $n$ could be extended to still be valid when $n$ is not an integer. This
+    question was first raised by L’Hopital on September $30^{th}$, 1695. On that day, in a letter to
+    Leibniz, he posed a question about $\frac{D^n}{Dx^n}$ , Leibniz’s notation for the $n^{th}$ derivative of
+    the linear function $f(x)=x$ .   L’Hopital curiously asked what the result would be if $n = \frac{1}{2}$ .
+    Leibniz responded that it would be “an apparent paradox, from which one day
+    useful consequences will be drawn,”[5]. \\
+
+    Following this unprecedented discussion, the subject of fractional calculus caught the
+    attention of other great mathematicians, many of whom directly or indirectly contributed
+    to its development. They included Euler, Laplace, Fourier, Lacroix, Abel, Riemann and
+    Liouville.
+  } 
+
+\end{quotation}
+
+\newpage
+
+\begin{quotation}
+  
+  \justify{
+    
+    In 1819, Lacroix became the first mathematician to publish a paper that mentioned a
+    fractional derivative [3]. \\
+
+    Starting with $y=x^m$ where m is a positive integer, Lacroix found the $n^{th}$ derivative, \\
+
+  } 
+
+
+
+    \begin{equation}
+      \frac{d^ny}{dx^n}  = \frac{m!}{m-n!} x^{m-n}  ,  m \geq n 
+      \end{equation}    
+     
+  \begin{flushleft}
+    And using Legendre’s symbol $\Gamma$ ,  for the generalized factorial, he wrote
+  \end{flushleft}    
+
+      
+    \begin{equation}
+      \frac{d^ny}{dx^n}  = \frac{\Gamma(m+1)}{\Gamma(m-n+1)} x^{m-n}  
+      \end{equation}    
+  
+  \begin{flushleft}
+    Finally by letting $m=1$ and $n=\frac{1}{2}$ , he obtained
+  \end{flushleft}
+
+  \begin{equation}
+    \frac{d^{\frac{1}{2}}y}{dx^{\frac{1}{2}}}  = \frac{\sqrt{x}}{\sqrt{\pi}}   
+    \end{equation}    
+
+
+\end{quotation}
+
+
+
+\end{document}
+
